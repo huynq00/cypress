@@ -3,6 +3,8 @@ describe("Form input", () => {
     cy.visit("https://mingo.vn/");
 
     cy.get("#textInput")
+      .should("be.visible")
+      .should("not.be.disabled")
       .type("Hello, world!")
       .should("have.value", "Hello, world!");
     cy.get("#emailInput")
