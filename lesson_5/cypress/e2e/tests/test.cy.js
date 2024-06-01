@@ -72,25 +72,6 @@ describe("Tìm giá trị trong danh sách", () => {
     });
   });
 
-  it("Click vào Home", () => {
-    cy.visit("https://www.w3schools.com/w3css/tryw3css_templates_pizza.htm");
-
-    cy.get(".tablink").contains("Starter").click();
-
-    cy.get("#Starter h1").each(($h1) => {
-      if ($h1.text().includes("Seasonal")) {
-        cy.log($h1.text());
-      }
-    });
-
-    cy.get("#Starter h1").each(($h1) => {
-      if ($h1.text().includes("Seasonal")) {
-        const pText = $h1.next("p").text();
-        cy.log(pText);
-      }
-    });
-  });
-
   it("Kiểm tra menu điều hướng", () => {
     cy.visit("https://www.w3schools.com/w3css/tryw3css_templates_pizza.htm");
 
