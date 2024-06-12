@@ -3,7 +3,19 @@
     "cypress": "^13.11.0"
   },
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.6",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": false,
+      "output": "cypress/cucumberReports/result.json"
+    },
+    "stepDefinitions": [
+      "cypress/e2e/tests/step_definitions/*.{js,ts}"
+    ]
   }
 }
