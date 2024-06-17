@@ -12,4 +12,9 @@ When("Tôi đăng nhập vào trang web", () => {
   cy.wait(2000);
   cy.get(loginPage.getPassWord).type(AccountBiz.password);
   cy.get(loginPage.getBTN_Login).click();
+  cy.wait(4000);
+  cy.visit(
+    "https://crm.bizdev.vn/base-table/list?table=data_product&project_id=5e8ed08f1a7d061b625c6161&set_sale_crm=1"
+  );
+  cy.get(".btn.btn-outline.menu-add-new").click();
 });
