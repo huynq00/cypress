@@ -14,14 +14,7 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-require('cypress-xpath');
-import "cypress-iframe";
-import "./commands";
+import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // Returning false here prevents Cypress from
-    // failing the test
-    return false;
-});
