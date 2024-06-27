@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 require('cypress-xpath');
 import "cypress-iframe";
+import 'cypress-file-upload';
 import "./commands";
 
 // Alternatively you can use CommonJS syntax:
