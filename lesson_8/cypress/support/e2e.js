@@ -18,9 +18,9 @@ require("cypress-xpath");
 import "cypress-iframe";
 import "cypress-file-upload";
 import "./commands";
-const mysql = require("cypress-mysql");
+// const mysql = require("cypress-mysql");
 
-mysql.addCommands();
+// mysql.addCommands();
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
